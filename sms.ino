@@ -18,6 +18,7 @@ WiFiClient client;
 Serial.print("Connecting to host...");
 if (client.connect(HOST, 80)){
   Serial.println("Host connected!");
+  Serial.println("");
 } else {
          Serial.println("Host connection failed");
 }
@@ -28,5 +29,5 @@ void sendSMS(){
 HttpClient http = HttpClient(w, HOST, 80);
 http.post("/trigger/motion_detected/with/key/E9XwTRnSndghQxBALMPt0");
 Serial.println("Making POST request");
-delay(60000);
+delay(2000);
 }

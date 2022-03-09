@@ -4,7 +4,7 @@ void sensorSetup() {
   pinMode(sensor, INPUT);    // initialize sensor as an input
   Serial.begin(115200);       
   Serial.println("PIR sensor warming up...");
-  delay(30000); // Let the PIR sensor warm up for 30 seconds
+  delay(3); // Let the PIR sensor warm up for 30 seconds 30000
 }
 
 int motionTrigger(){

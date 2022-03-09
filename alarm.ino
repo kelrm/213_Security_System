@@ -3,8 +3,7 @@ void alarmSetup(){
 }
 
 void alarm(){  
-  while(1)
-  {
+  Serial.println("Alarm Sounding!");
     //output a frequency
     for(int i=0;i<80;i++)
     {
@@ -12,6 +11,5 @@ void alarm(){
       delay(1);//wait for 1ms
       digitalWrite(buzzer,LOW);
       delay(1);//wait for 1ms
- }
  }
 }
